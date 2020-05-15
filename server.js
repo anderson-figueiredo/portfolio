@@ -1,7 +1,7 @@
 var express    = require('express'),
     path       = require('path'),
     pug        = require('pug')
-    PORT       = proccess.env.PORT || 8080
+    PORT       = process.env.PORT || 8080
     app        = express();
 
 app.use(express.static(path.join(__dirname, 'public')));
