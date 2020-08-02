@@ -1,8 +1,8 @@
 var express    = require('express'),
     path       = require('path'),
-    pug        = require('pug')
+    pug        = require('pug');
     PORT       = process.env.PORT || 8080
-    app        = express();
+    app        = express(),
 
 app.use(express.static(path.join(__dirname, 'public')));
 app.set('view engine', 'pug');
@@ -14,6 +14,10 @@ app.get('/', function(req, res) {
 
 app.use('/about', function(req, res) {
   res.render('about');
+});
+
+app.use('/articles', function(req, res) {
+  res.render('articles');
 });
 
 var server = app.listen(PORT, function() {

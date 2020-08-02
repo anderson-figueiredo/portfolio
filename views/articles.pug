@@ -14,19 +14,14 @@
 <body>
     include templates/header.pug
     <main class="main container">
-        h1(class="main__title") Anderson Figueiredo
-        
-        h2 Minhas experiências
+        h1(class="main__title") Publicações
+        |
+        h2(class="main__subtitle") Tech Manager e desenvolvedor no Grupo Caelum Alura
 
-        div
-            h3 Descrição
-            p Trabalhando com desenvolvimento web desde 2017
-            p Agilista de coração
-            p Estudo inglês
-            p Gosto de viajar
-            p Sempre aberto a conversar com todos
-
-
+        section(class="main__posts__highlight")
+            article(class="main__posts__highlight__card")
+                div(class="main__posts__highlight__card-content") titulo do post  - (debug version)
+                    p Conteúdo do post - (debug version)
     </main>
     <footer class="footer container"></footer>
     script(src="js/menu.js")
