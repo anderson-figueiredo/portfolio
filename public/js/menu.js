@@ -1,6 +1,6 @@
 let body=document.querySelector('body')
 
-body.addEventListener('click',acoesMenu)
+body.addEventListener('click', acoesMenu)
 
 let menu=document.querySelector('.menu');
 

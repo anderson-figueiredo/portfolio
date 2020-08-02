@@ -15,7 +15,7 @@ body {
 .header__logo {
     width: 5rem;
     border-radius: 50px;
-    border: 2px solid black;
+    border: 2px solid #595959;
 }
 
 .menu__icon {
@@ -28,7 +28,7 @@ body {
     z-index: 1;
     right: -160%;
     top: 0;
-    background-color: #fbf300;
+    background-color: #EEF277;
     width: 20rem;
     height: 50vh;
     -webkit-transition: right .25s;
@@ -62,8 +62,47 @@ body {
     text-transform: uppercase;
     font-weight: 800;
     font-size: 1.5rem;
+    color: #595959;
+}
+
+.menu__list__item:hover {
     color: #000000;
 }
 
 .main {
+    margin-top: 2rem;
+}
+
+.main__title {
+    font-size: 2rem;
+}
+
+.main__subtitle {
+    font-weight: 400;
+}
+
+.main__posts__highlight {
+    display: flex;
+    
+    margin-top: 2rem;
+}
+
+.main__posts__highlight__card, .main__posts__highlight__card-content {
+    color: white;
+    font-weight: 600;
+}
+
+.main__posts__highlight__card {
+    height: 10rem;
+    width: 100vw;
+    background-color: aqua;
+}
+
+.main__posts__highlight__card-content {
+    background-color: blueviolet;
+    height: 2rem;
+}
+
+.main__posts__highlight__card-content p {
+    margin-top: 1rem;
 }

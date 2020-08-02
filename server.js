@@ -9,8 +9,11 @@ app.set('view engine', 'pug');
 app.set('views', './views');
 
 app.get('/', function(req, res) {
-
   res.render('index');
+});
+
+app.use('/about', function(req, res) {
+  res.render('about');
 });
 
 var server = app.listen(PORT, function() {
