@@ -1,1 +1,7 @@
-
+engines:
+  eslint:
+    enabled: true
+  csslint:
+    enabled: true
+pull_requests:
+  enabled: true
