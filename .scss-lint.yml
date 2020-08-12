@@ -1,0 +1,7 @@
+linters:
+  Indentation:
+    enabled: true
+  StringQuotes:
+    enabled: true
+  UrlQuotes:
+    enabled: true
