@@ -5,3 +5,5 @@ linters:
     enabled: true
   UrlQuotes:
     enabled: true
+  order-alphabetical:
+    enabled: false
