@@ -13,9 +13,8 @@
     "description": "My first try to make a good portfolio",
     "dependencies": {
         "express": "4.17.1",
-        "jstransformer-markdown-it": "^2.1.0",
+        "js-yaml": "^3.14.0",
         "lit-node": "^0.1.1",
-        "markdown-it": "^11.0.0",
         "pug": "2.0.4",
         "showdown": "^1.9.1"
     }

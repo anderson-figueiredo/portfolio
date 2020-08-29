@@ -1,0 +1,44 @@
+.main__posts__highlight {
+    display: flex;
+    flex-direction: column;
+    /* padding: 1rem; */
+    justify-content: space-around;
+    margin-top: 2rem;
+    border: 1px solid;
+    height: 25rem;
+}
+
+.main__posts__highlight__card, .main__posts__highlight__card-content {
+    color: white;
+    font-weight: 600;
+}
+
+.main__posts__highlight__card {
+    height: 10rem;
+    width: 100vw;
+    background-color: aqua;
+}
+
+.main__posts__highlight__card-content {
+    background-color: lightgray;
+    display: flex;
+    flex-direction: column;
+    margin: 1rem;
+}
+
+.main__posts__highlight__card-content-title {
+    color: black;
+    font-size: 1.5rem;
+    text-transform: uppercase;
+}
+
+.main__posts__highlight__card-content-author {
+    color: black;
+    font-size: .5rem;
+    text-transform: uppercase;
+}
+
+.main__posts__highlight__card-content-text {
+    margin-top: 1rem;
+    font-size: 1rem;
+}

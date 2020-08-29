@@ -14,29 +14,3 @@ body {
 .main__subtitle {
     font-weight: 400;
 }
-
-.main__posts__highlight {
-    display: flex;
-    
-    margin-top: 2rem;
-}
-
-.main__posts__highlight__card, .main__posts__highlight__card-content {
-    color: white;
-    font-weight: 600;
-}
-
-.main__posts__highlight__card {
-    height: 10rem;
-    width: 100vw;
-    background-color: aqua;
-}
-
-.main__posts__highlight__card-content {
-    background-color: blueviolet;
-    height: 2rem;
-}
-
-.main__posts__highlight__card-content p {
-    margin-top: 1rem;
-}
