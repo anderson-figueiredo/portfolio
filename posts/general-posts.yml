@@ -1,0 +1,13 @@
+
+--- # primeiro post
+  title: "titulo do primeiro post"
+  description: "Resumo do primeiro post, um texto curto que vem depois do autor"
+  author: "Anderson Figueiredo"
+  slug: "primeiro-post"
+
+
+--- # segundo post
+  title: "titulo do segundo post"
+  description: "Resumo do segundo post, um texto curto que vem depois do autor"
+  author: "Anderson Figueiredo"
+  slug: "segundo-post"

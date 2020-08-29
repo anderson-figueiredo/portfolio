@@ -7,7 +7,7 @@ buildArticles = () => {
     fetch('/api/articles')
         .then((resp) => resp.json())
         .then((data) => {
-            data.posts.forEach(element => {
+            data.forEach(element => {
                 let article = document.createElement("article")
                 article.classList.add('main__posts__highlight__card-content')
                 
@@ -23,7 +23,7 @@ buildArticles = () => {
 
                 let paragraph = document.createElement("p")
                 paragraph.classList.add('main__posts__highlight__card-content-text')
-                paragraph.innerText = `${element.content}`
+                paragraph.innerText = `${element.description}`
                 article.appendChild(paragraph)
 
                 let seeMore = document.createElement("a")
