@@ -3,7 +3,7 @@
 
 buildArticles = () => {
     let cardContainer = document.querySelector('.main__posts__highlight')
-
+    console.log("indo buscar artigos")
     fetch('/api/articles')
         .then((resp) => resp.json())
         .then((data) => {
@@ -29,7 +29,7 @@ buildArticles = () => {
                 let seeMore = document.createElement("a")
                 seeMore.classList.add('main__posts__highlight__card-content-seeMore')
                 seeMore.innerText = 'ver mais'
-                seeMore.setAttribute('href', `/articles/${element.slug}`)
+                seeMore.setAttribute('href', `/articles/${element.slug}/`)
                 article.appendChild(seeMore)
 
                 cardContainer.appendChild(article)

@@ -5,6 +5,7 @@ var express    = require('express'),
     pug        = require('pug'),
     PORT       = process.env.PORT || 8080
     app        = express(),
+    marked     = require('marked'),
     yaml = require('js-yaml');
     fs   = require('fs');
 
@@ -20,31 +21,14 @@ app.use('/about', function(req, res) {
   res.render('about');
 });
 
-app.use('/articles', function(req, res) {
-  res.render('articles');
-});
-
-app.get('/api/articles', function(req, res) {
-  try {
-    let doc = yaml.safeLoadAll(fs.readFileSync(`posts/general-posts.yml`))
-    res.json(doc)
-  } catch (error) {
-    console.log(error)
-  }
-});
-
-//I'm stucked in this request, the static files are comming like "::8080/articlese/index.css" instead just ::8080/index.css
-app.get('/articlese/:filename', function(req, res) {
+app.get('/article/:filename', function(req, res) {
   console.log(req.params)
-  // const fileName = extractPostName(req)
-  let assets;
-    try {
-     assets = yaml.safeLoad(fs.readFileSync(`posts/${fileName}.yml`))
-   } catch (error) {
-     console.log(error)
-   }
-  res.render('article', assets)
+  const fileName = extractPostName(req)
+  var path = `./posts/${fileName}.md`;
+    var file = fs.readFileSync(path, 'utf8');
 
+    console.log(file.toString())
+    res.render('article',{post:marked.parse(file.toString())})
 });
 
 var server = app.listen(PORT, function() {

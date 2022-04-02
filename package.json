@@ -13,9 +13,11 @@
     "description": "My first try to make a good portfolio",
     "dependencies": {
         "express": "4.17.1",
-        "js-yaml": "^3.14.0",
+        "js-yaml": "^3.14.1",
         "lit-node": "^0.1.1",
+        "marked": "^4.0.12",
         "pug": "2.0.4",
+        "react-markdown": "^8.0.2",
         "showdown": "^1.9.1"
     }
 }
