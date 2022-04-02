@@ -14,3 +14,7 @@ body {
 .main__subtitle {
     font-weight: 400;
 }
+
+.home-card {
+    border: solid 1px black;
+}

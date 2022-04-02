@@ -22,6 +22,10 @@ app.use('/about', function(req, res) {
   res.render('about');
 });
 
+app.use('/contato', function(req, res) {
+  res.render('contato');
+});
+
 app.get('/articles', function(req, res) {
   res.render('articles');
 }); 

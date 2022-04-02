@@ -16,13 +16,22 @@
     include templates/header.pug
     main(class="main container")
         h1(class="main__title") Anderson Figueiredo
-        |
         h2(class="main__subtitle") Tech Manager e desenvolvedor no Grupo Caelum Alura
 
-        section(class="main__posts__highlight")
-            article(class="main__posts__highlight__card")
-                div(class="main__posts__highlight__card-content") titulo do post  - (debug version)
-                    p Conteúdo do post - (debug version)
+        article(class="home-card")
+            h2(class="main__subtitle") Artigos publicados
+            |
+            p leia artigos sobre agilidade, pessoas e mais
+
+        article(class="home-card")
+            h2(class="main__subtitle") Catálogo de cerimônias
+            |
+            p Veja retrospectivas, futurospectivas, team building, check-in e mais 
+
+        article(class="home-card")
+            h2(class="main__subtitle") Sobre mim
+            |
+            p Currículo, experiência e mais
     
     <footer class="footer container"></footer>
     script(src="js/menu.js")
