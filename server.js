@@ -1,4 +1,5 @@
 const { url } = require('inspector');
+const sanitizeHtml = require('sanitize-html');
 
 var express    = require('express'),
     path       = require('path'),
@@ -21,14 +22,17 @@ app.use('/about', function(req, res) {
   res.render('about');
 });
 
+app.get('/articles', function(req, res) {
+  res.render('articles');
+}); 
+
 app.get('/article/:filename', function(req, res) {
-  console.log(req.params)
   const fileName = extractPostName(req)
   var path = `./posts/${fileName}.md`;
     var file = fs.readFileSync(path, 'utf8');
-
-    console.log(file.toString())
-    res.render('article',{post:marked.parse(file.toString())})
+    var textMarkdown = marked.parse(file.toString())
+    var html = sanitizeHtml(textMarkdown)
+    res.render('article',{post:html})
 });
 
 var server = app.listen(PORT, function() {

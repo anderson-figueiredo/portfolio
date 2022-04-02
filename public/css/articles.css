@@ -15,7 +15,7 @@
 
 .main__posts__highlight__card {
     height: 10rem;
-    width: 100vw;
+    /* width: 100vw; */
     background-color: aqua;
 }
 
